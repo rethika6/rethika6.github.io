@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rethika Ambalam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("IMG_6964_Original.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">Rethika Ambalam</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PROJECTS</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> HOBBIES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">HOBBIES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">Rethika Ambalam</span><br>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium">Rethika Ambalam</span><br>
+    <span class="w3-large">A sophomore at the Georgia Institute of Technology studying Computational Media</span>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more about me</a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+   <!-- <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i> 
+    <i class="fa fa-linkedin w3-hover-opacity" > </i> -->
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px">
+  <h3 class="w3-center">About Computational Media</h3>
+ <!--- <p class="w3-center w3-large">Key features of our company</p> -->
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">What is it?</p>
+      <p>Computational Media is the intersection of Computer Science and Design.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Courses</p>
+      <p>I take all of the Computer Science general education requirements while my upper level courses are focused on my threads of Artificial Intelligence and Interaction Design. One
+        half of my coursework is with the college of Computing and the other is with the LMC School.
+      </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Interests</p>
+      <p>My interests include UI/UX design, mobile app development, web development, artificial intelligence, and human-computer interaction.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Future</p>
+      <p>The Computational Media major gives me the tools to work in many different fields. Some examples include working as a software engineer,
+         mobile or web developer, or a UI/UX designer.</p>
+    </div>
+  </div>
+</div>
+
+<!-- About Me Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 64px" id="about">
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col m6">
+      <h3>About Me</h3>
+      <p>Hi! My name is Rethika Ambalam and I am a sophomore at the Georgia Institute of Technology. This is my first year at Tech as I transferred from the University of Tennessee in Knoxville.
+        <br>The main reason I came to Tech was because I wanted to major in Compuational Media. This major allows me to study the intersection of technology and design. I have had an interest in 
+        design since I was litte. In my free time, I would learn how to make duct tape wallets and jewelry. I was entranced by crafting. Everything I did was always meticulous and measured. I followed
+        youtube tutorials closely to the point where I now realize I was iterating through the steps and thinking about crafting through a computational lense. All of these experiences led me to where I am now. 
+        <br> Some of my hobbies include playing tennis, photography, and playing board games with friends and family. Fun fact, I took the photo you see on the main page. Furthermore, I love traveling, watching Formula 1 and watching TV. My current favorite TV show is Suits and my favorite movie is Now You See Me 
+        (I was a huge magic fanatic as a kid)!</p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="IMG_1505.jpg" alt="Rethika" width="600" height="400" style="padding:64px;">
+    </div>
+  </div>
+</div>
+
+<!-- Projects Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">Projects and Activities</h3>
+  <p class="w3-center w3-large"></p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="CRRAFT GAMEBOARD (1).png" alt="CRRAFT gameboard" style="width:100%">
+        <div class="w3-container">
+          <h3>CRRAFT Undergraduate Research Project</h3>
+          <p class="w3-opacity">Research Assistant</p>
+          <p>At the University of Tennesse, Knoxville, I worked with Professor Freances Harper as an Undergraduate Research Assistant to help BIPOC children get access to computer science principles. To do this, 
+            I designed a gameboard consisting of a maze for a code-and-go robot mouse in Photoshop. The mat and the robot mouse come in kits that are given to parents and teachers to expose preschoolers to computational thinking.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="AE3BACC4-E2D6-41CE-9465-463F1DEB1AE4.JPG" alt="DesignsbyRethika" style="width:100%">
+        <div class="w3-container">
+          <h3>DesignsbyRethika</h3>
+          <p class="w3-opacity">Founder</p>
+          <p>DesignsbyRethika is a small business I started in highschool where I sold sticker designs on Redbubble. I also sold wooden letter photo collages and handmade greeting cards on Etsy. With this,
+            I gained experience in marketing and developing an audience on social media platforms by teaching others how to use photoshop and marketing my products. I was able
+            to reach over one hundred thousand monthly viewers on Pinterest with my Photoshop tutorials.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Screen Shot 2023-09-14 at 10.51.54 PM.png" alt="BetterReads" style="width:100%">
+        <div class="w3-container">
+          <h3>BetterReads</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>During a summer program, I designed a prototype of BetterReads with three other students using Figma. The goal was to create a more user friendly and design oriented version
+            of the app GoodReads. As an avid reader, I love sharing what books I am currently reading with friends. When using the GoodReads app, I noticed that it was very outdated and hard to
+            use for new users. Thus, we used Figma to design a potential upgrade to GoodReads.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="Screen Shot 2023-09-14 at 10.53.32 PM.png" alt="Society of Women Engineers" style="width:100%">
+        <div class="w3-container">
+          <h3>Society of Women Engineers</h3>
+          <p class="w3-opacity">Member</p>
+          <p>I became a member of the Society of Women engineers at the University of Tennesse and joined the chapter at Georgia Tech to continue working with them. With SWE,
+            I have volunteered with members in organizations such as Girl Scouts. I am also participating in a mentorship program as a mentee to learn from upperclassmen studying
+            Computer Science.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Hobbies Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">PHOTOGRAPHY PORTFOLIO</h3>
+  <p class="w3-center w3-large">Some of my favorite photos I have taken</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="IMG_6964_Original.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="San Francisco">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_6768 2 Medium.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Nature">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_4255-EFFECTS.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="UNC Chapel Hill">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="FullSizeRender.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Venice">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="IMG_7768_Original Medium.jpeg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The Sky">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="353E10F6-7E47-49DB-9231-74D47FE3043B.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Ocoee River">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="3644ABFB-29D5-4B63-A23E-3C17AA531853.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Flowers">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="IMG_2825.JPG" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Flowers">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Atlanta, GA</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rambalam3@gatech.edu</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
