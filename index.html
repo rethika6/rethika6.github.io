@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/729863b704.js" crossorigin="anonymous"></script>
 <style>
 body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
@@ -36,14 +37,14 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">Rethika Ambalam</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
-      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> PROJECTS</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class= "fa fa-user"></i> ABOUT</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> PROJECTS</a>
       <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> HOBBIES</a>
       <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
     </div>
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
-    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="open()">
       <i class="fa fa-bars"></i>
     </a>
   </div>
@@ -51,11 +52,11 @@ body, html {
 
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">PROJECTS</a>
-  <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">HOBBIES</a>
-  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  <a href="javascript:void(0)" onclick="close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="close()" class="w3-bar-item w3-button">ABOUT</a>
+  <a href="#team" onclick="close()" class="w3-bar-item w3-button">PROJECTS</a>
+  <a href="#work" onclick="close()" class="w3-bar-item w3-button">HOBBIES</a>
+  <a href="#contact" onclick="close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
 
 <!-- Header with full-height image -->
@@ -85,7 +86,7 @@ body, html {
       <p>Computational Media is the intersection of Computer Science and Design.</p>
     </div>
     <div class="w3-quarter">
-      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <i class="fa-solid fa-book w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Courses</p>
       <p>I take all of the Computer Science general education requirements while my upper level courses are focused on my threads of Artificial Intelligence and Interaction Design. One
         half of my coursework is with the college of Computing and the other is with the LMC School.
@@ -113,8 +114,8 @@ body, html {
       <p>Hi! My name is Rethika Ambalam and I am a sophomore at the Georgia Institute of Technology. This is my first year at Tech as I transferred from the University of Tennessee in Knoxville.
         <br>The main reason I came to Tech was because I wanted to major in Compuational Media. This major allows me to study the intersection of technology and design. I have had an interest in 
         design since I was litte. In my free time, I would learn how to make duct tape wallets and jewelry. I was entranced by crafting. Everything I did was always meticulous and measured. I followed
-        youtube tutorials closely, iterating through the steps and thinking about crafting through a computational lense. All of these experiences led me to where I am now. 
-        <br> Some of my hobbies include playing tennis, photography, and playing board games with friends and family. Fun fact, I took the photo you see on the main page. Furthermore, I love traveling, watching Formula 1 and watching TV. Currently, my favorite TV show is Suits and my favorite movie is Now You See Me 
+        youtube tutorials closely to the point where I now realize I was iterating through the steps and thinking about crafting through a computational lense. All of these experiences led me to where I am now. 
+        <br> Some of my hobbies include playing tennis, photography, and playing board games with friends and family. Fun fact, I took the photo you see on the main page. Furthermore, I love traveling, watching Formula 1 and watching TV. My current favorite TV show is Suits and my favorite movie is Now You See Me 
         (I was a huge magic fanatic as a kid)!</p>
     </div>
     <div class="w3-col m6">
@@ -130,7 +131,7 @@ body, html {
   <div class="w3-row-padding" style="margin-top:64px">
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="CRRAFT GAMEBOARD (1).png" alt="CRRAFT gameboard" style="width:100%">
+        <a href="https://crraft.org/partners/"><img src="CRRAFT GAMEBOARD (1).png" alt="CRRAFT gameboard" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container">
           <h3>CRRAFT Undergraduate Research Project</h3>
           <p class="w3-opacity">Research Assistant</p>
@@ -155,7 +156,7 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="Screen Shot 2023-09-14 at 10.51.54 PM.png" alt="BetterReads" style="width:100%">
+        <a href="https://www.figma.com/proto/Ndm8766hghJcsaHKVgJlzH/BetterReads.com?type=design&node-id=2-12&t=hINumlYZBTA4tPxZ-1&scaling=contain&page-id=0%3A1&mode=design"><img src="BetterReads.png" alt="BetterReads" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container">
           <h3>BetterReads</h3>
           <p class="w3-opacity">Designer</p>
@@ -168,9 +169,10 @@ body, html {
     </div>
     <div class="w3-col l3 m6 w3-margin-bottom">
       <div class="w3-card">
-        <img src="Screen Shot 2023-09-14 at 10.53.32 PM.png" alt="Society of Women Engineers" style="width:100%">
+        <!-- <video src="yodachatbotdemo.mp4" controls id="demo"></video> -->
+        <a href="Chatbot.html"><img src="YodaChatbot.png" alt="Yoda Chatbot" style="width:100%" class="w3-hover-opacity"></a>
         <div class="w3-container">
-          <h3>Society of Women Engineers</h3>
+          <h3>Yoda Chatbot</h3>
           <p class="w3-opacity">Member</p>
           <p>I became a member of the Society of Women engineers at the University of Tennesse and joined the chapter at Georgia Tech to continue working with them. With SWE,
             I have volunteered with members in organizations such as Girl Scouts. I am also participating in a mentorship program as a mentee to learn from upperclassmen studying
@@ -275,7 +277,7 @@ function onClick(element) {
 // Toggle between showing and hiding the sidebar when clicking the menu icon
 var mySidebar = document.getElementById("mySidebar");
 
-function w3_open() {
+function open() {
   if (mySidebar.style.display === 'block') {
     mySidebar.style.display = 'none';
   } else {
@@ -284,7 +286,7 @@ function w3_open() {
 }
 
 // Close the sidebar with the close button
-function w3_close() {
+function close() {
     mySidebar.style.display = "none";
 }
 </script>
