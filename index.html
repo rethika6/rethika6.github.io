@@ -9,25 +9,103 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://kit.fontawesome.com/729863b704.js" crossorigin="anonymous"></script>
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+  body, h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+    margin: 0;
+    padding: 0;
+  }
 
-body, html {
+  body, html {
+    height: 100%;
+    line-height: 1.8;
+  }
+
+  /* Full height image header */
+  .bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("IMG_6964_Original.jpg");
+    min-height: 100%;
+  }
+
+  .w3-bar .w3-button {
+    padding: 16px;
+  }
+
+  /* Updated styles for project cards */
+  .w3-card {
+    height: 100%;
+  }
+
+  .w3-col {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .w3-card > .w3-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* Container to position images */
+.image-container {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+  height: 200px; /* Adjust as needed */
+}
+
+/* Main image styles */
+.main-image, .hover-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Hide the hover image by default */
+.hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /*Initially hidden */
+  width: 98%;
+  height: 300px;
+  transition: opacity 0.3s ease; /*Smooth transition */
+ }
+/* Overlay styles */
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
-  line-height: 1.8;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.5); Adjust the background color and opacity */
+}
+.overlay-text {
+  color: rgb(0, 0, 0); /* Text color */
+  font-size: 20px; /* Adjust the font size */
+  font-family: "Raleway", sans-serif;
+  font-style: oblique;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  top: 50%;
+  bottom: auto;
+  left: auto;
+  right: auto;
+}
+.image-container:hover .image-overlay {
+  display: flex;
+}
+/* Show the hover image on hover */
+.image-container:hover .hover-image {
+  opacity: .8; /* Set the opacity you want */
 }
 
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-size: cover;
-  background-image: url("IMG_6964_Original.jpg");
-  min-height: 100%;
-}
-
-.w3-bar .w3-button {
-  padding: 16px;
-}
 </style>
+  
 </head>
 <body>
 
@@ -88,7 +166,7 @@ body, html {
     <div class="w3-quarter">
       <i class="fa-solid fa-book w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Courses</p>
-      <p>I take all of the Computer Science general education requirements while my upper level courses are focused on my threads of Artificial Intelligence and Interaction Design. One
+      <p>Computational Media majors take all of the Computer Science general education requirements. The upper level courses are focused on certain threads. I chose to take Artificial Intelligence and Interaction Design. One
         half of my coursework is with the college of Computing and the other is with the LMC School.
       </p>
     </div>
@@ -101,16 +179,16 @@ body, html {
       <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
       <p class="w3-large">Future</p>
       <p>The Computational Media major gives me the tools to work in many different fields. Some examples include working as a software engineer,
-         mobile or web developer, or a UI/UX designer.</p>
+         mobile or web developer, product manager, or a UI/UX designer.</p>
     </div>
   </div>
 </div>
 
 <!-- About Me Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 64px" id="about">
-  <div class="w3-row-padding" style="margin-top:64px">
+<div class="w3-container w3-light-grey" style="padding:128px 200px" id="about">
+  <div class="w3-row-padding" style="margin-top:32px">
+    <h3 class="w3-center" style="margin-bottom: 64px;">About Me</h3>
     <div class="w3-col m6">
-      <h3>About Me</h3>
       <p>Hi! My name is Rethika Ambalam and I am a sophomore at the Georgia Institute of Technology. This is my first year at Tech as I transferred from the University of Tennessee in Knoxville.
         <br>The main reason I came to Tech was because I wanted to major in Compuational Media. This major allows me to study the intersection of technology and design. I have had an interest in 
         design since I was litte. In my free time, I would learn how to make duct tape wallets and jewelry. I was entranced by crafting. Everything I did was always meticulous and measured. I followed
@@ -119,73 +197,81 @@ body, html {
         (I was a huge magic fanatic as a kid)!</p>
     </div>
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="IMG_1505.jpg" alt="Rethika" width="600" height="400" style="padding:64px;">
+      <img class="w3-image w3-round-large" src="IMG_1505.jpg" alt="Rethika" width="600" height="400" style="padding:10px 50px;">
     </div>
   </div>
 </div>
 
 <!-- Projects Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
-  <h3 class="w3-center">Projects and Activities</h3>
-  <p class="w3-center w3-large"></p>
+<div class="w3-container" style="padding:128px 32px 250px" id="team">
+  <h3 class="w3-center">PROJECTS</h3>
+  <p class="w3-center"> Click on each project for more! </p>
+
   <div class="w3-row-padding" style="margin-top:64px">
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <a href="https://crraft.org/partners/"><img src="CRRAFT GAMEBOARD (1).png" alt="CRRAFT gameboard" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h3>CRRAFT Research Project</h3>
-          <p class="w3-opacity">Research Assistant</p>
-          <p>At the University of Tennesse, Knoxville, I worked with Professor Freances Harper as an Undergraduate Research Assistant to help BIPOC children get access to computer science principles. To do this, 
-            I designed a gameboard consisting of a maze for a code-and-go robot mouse in Photoshop. The mat and the robot mouse come in kits that are given to parents and teachers to expose preschoolers to computational thinking.
-          </p>
-        </div>
+    <div class="image-container w3-col l3 m6">
+      <div class="image-overlay">
+        <a href="https://www.figma.com/proto/Ndm8766hghJcsaHKVgJlzH/BetterReads.com?type=design&node-id=2-12&t=hINumlYZBTA4tPxZ-1&scaling=contain&page-id=0%3A1&mode=design"><img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+      <p class="overlay-text">BetterReads</p>
       </div>
+        <img src="BetterReads.png" alt="BetterReads" style="width:100%; height:300px; object-fit: cover;" class="main-image">
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <img src="AE3BACC4-E2D6-41CE-9465-463F1DEB1AE4.JPG" alt="DesignsbyRethika" style="width:100%">
-        <div class="w3-container">
-          <h3>DesignsbyRethika</h3>
-          <p class="w3-opacity">Founder</p>
-          <p>DesignsbyRethika is a small business I started in highschool where I sold sticker designs on Redbubble. I also sold wooden letter photo collages and handmade greeting cards on Etsy. With this,
-            I gained experience in marketing and developing an audience on social media platforms by teaching others how to use photoshop and marketing my products. I was able
-            to reach over one hundred thousand monthly viewers on Pinterest with my Photoshop tutorials.
-          </p>
-        </div>
+    <div class="w3-col l3 m6 image-container">
+      <div class="image-overlay">
+        <a href="https://crraft.org/partners/"><img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+        <p class="overlay-text">CRRAFT Research Project</p>
+    </div>
+      <img src="CRRAFT GAMEBOARD (1).png" alt="CRRAFT gameboard" style="width:100%; height: 300px; object-fit: cover;" class="main-image">
+    </div>
+    <div class="w3-col l3 m6 image-container">
+      <div class="image-overlay">
+        <a href="Chatbot.html"><img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+        <p class="overlay-text">Yoda Chatbot</p>
       </div>
+        <img src="YodaChatbot.png" alt="Yoda Chatbot" style="width:100%; height:300px; object-fit: cover;" class="main-image"></div>
+        
+        <div class="w3-col l3 m6 image-container">
+          <div class="image-overlay">
+            <a href="https://rethika6.github.io/Escape-Room/"><img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+            <p class="overlay-text">Escape Room Mini-Game</p>
+          </div>
+      <img src="escaperoom.png" alt="Escape Room Game" style="width:100%; height:300px; object-fit: cover;" class="main-image"></div>
     </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <a href="https://www.figma.com/proto/Ndm8766hghJcsaHKVgJlzH/BetterReads.com?type=design&node-id=2-12&t=hINumlYZBTA4tPxZ-1&scaling=contain&page-id=0%3A1&mode=design"><img src="BetterReads.png" alt="BetterReads" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h3>BetterReads</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>During a summer program, I designed a prototype of BetterReads with three other students using Figma. The goal was to create a more user friendly and design oriented version
-            of the app GoodReads. As an avid reader, I love sharing what books I am currently reading with friends. When using the GoodReads app, I noticed that it was very outdated and hard to
-            use for new users. Thus, we used Figma to design a potential upgrade to GoodReads.
-          </p>
+
+
+    <div class="w3-row-padding" style="margin-top:125px">
+      <div class="image-container w3-col l3 m6">
+        <div class="image-overlay">
+          <img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+        <p class="overlay-text">In Progress...</p>
         </div>
+          <img src="construction.jpg" alt="Construction" style="width:100%; height:300px; object-fit: cover;" class="main-image">
       </div>
-    </div>
-    <div class="w3-col l3 m6 w3-margin-bottom">
-      <div class="w3-card">
-        <!-- <video src="yodachatbotdemo.mp4" controls id="demo"></video> -->
-        <a href="Chatbot.html"><img src="YodaChatbot.png" alt="Yoda Chatbot" style="width:100%" class="w3-hover-opacity"></a>
-        <div class="w3-container">
-          <h3>Yoda Chatbot</h3>
-          <p class="w3-opacity">Member</p>
-          <p>I became a member of the Society of Women engineers at the University of Tennesse and joined the chapter at Georgia Tech to continue working with them. With SWE,
-            I have volunteered with members in organizations such as Girl Scouts. I am also participating in a mentorship program as a mentee to learn from upperclassmen studying
-            Computer Science.
-          </p>
+      <div class="w3-col l3 m6 image-container">
+        <div class="image-overlay">
+          <img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+          <p class="overlay-text">In Progress...</p>
+      </div>
+        <img src="construction.jpg" alt="Construction" style="width:100%; height: 300px; object-fit: cover;" class="main-image">
+      </div>
+      <div class="w3-col l3 m6 image-container">
+        <div class="image-overlay">
+          <img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;"></a>
+          <p class="overlay-text">In Progress...</p>
         </div>
+          <img src="construction.jpg" alt="Construction" style="width:100%; height:300px; object-fit: cover;" class="main-image"></div>
+          
+          <div class="w3-col l3 m6 image-container">
+            <div class="image-overlay">
+              <img src="white.png" class="hover-image" style="width:100%; height:300px; object-fit: cover;">
+              <p class="overlay-text">In Progress...</p>
+            </div>
+        <img src="construction.jpg" alt="Construction" style="width:100%; height:300px; object-fit: cover;" class="main-image"></div>
       </div>
-    </div>
-  </div>
 </div>
 
+
 <!-- Hobbies Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="work">
+<div class="w3-container w3-light-grey" style="padding:64px 16px" id="work">
   <h3 class="w3-center">PHOTOGRAPHY PORTFOLIO</h3>
   <p class="w3-center w3-large">Some of my favorite photos I have taken</p>
 
@@ -230,14 +316,14 @@ body, html {
 </div>
 
 <!-- Contact Section -->
-<!-- <div class="w3-container" style="padding:128px 16px" id="contact">
+<div class="w3-container" style="padding:128px 16px" id="contact">
   <h3 class="w3-center">CONTACT</h3>
   <p class="w3-center w3-large">Lets get in touch. Send me a message:</p>
   <div style="margin-top:48px">
     <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Atlanta, GA</p>
     <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: rambalam3@gatech.edu</p>
     <br>
-    <form action="/action_page.php" target="_blank">
+    <form action="action_page.php" method="post">
       <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
@@ -249,7 +335,7 @@ body, html {
       </p>
     </form>
   </div>
-</div> -->
+</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64">
@@ -289,6 +375,19 @@ function open() {
 function close() {
     mySidebar.style.display = "none";
 }
+
+// function displayTitle(titleText) {
+//   var titleDiv = document.getElementById("imageTitle");
+//   titleDiv.style.display = "block";
+//   titleDiv.innerHTML = titleText;
+// }
+
+// function hideTitle() {
+//   var titleDiv = document.getElementById("imageTitle");
+//   titleDiv.style.display = "none";
+//   titleDiv.innerHTML = "";
+// }
+
 </script>
 
 </body>
