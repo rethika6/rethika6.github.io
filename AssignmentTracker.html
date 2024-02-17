@@ -1,0 +1,111 @@
+<!-- FILEPATH: AssignmentTracker.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>Rethika Ambalam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/729863b704.js" crossorigin="anonymous"></script>
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+  background-color: black;
+  color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+
+.image-and-text-container {
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">Rethika Ambalam</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- <div class="w3-container" style="padding-top: 8%;">
+    <h3 style="text-align: center;">Assignment Tracker Design</h3>
+    <div class="image-and-text-container">
+        <img src="Images/AssignmentTrackerIterations.png" alt="AssignmentTrackerIterations" style="width:70%; height: auto; object-fit: cover; float: left; margin-right: 20px;">
+        <p style="text-align: justify;">I decided to create an assignment tracker because it is something that I would use on a daily basis as a college student. I really enjoy the Apple Watch activity rings so I decided to use that as my base design for tracking progress. The rings use closure, symmetry, common fate, continuity, proximity, and similarity to portray progress. For the functionality, when the user opens the app, they will directly see how far along they are for the assignments they have that week. Then, they can update their progress by swiping up on the assignments tab. I differentiated each iteration by color, using a black and white color scheme with monochromatic colors for the first iteration, a neon theme with a "dark mode" esque idea, and a regular white theme for the last iteration. The colors in the rings are triadic colors on the color wheel. I added a fourth iteration that is completely different from the rest as I thought the rings could get boring. The idea is to gamify completing assignments by raising a pet dragon. After completing assignments on time or early, you can gain points to upgrade and grow your dragon. You can see your progress on the right-hand side of the screen until your next update.</p>
+    </div>
+</div> -->
+
+<div class="w3-container" style="padding-top: 5%;">
+    <h3 style="text-align: center;">Assignment Tracker Design</h3>
+    <div class="image-and-text-container" style="padding-left: 20%;">
+        <img src="Images/AssignmentTrackerIterations.png" alt="AssignmentTrackerIterations" style="width:70%; height: auto; object-fit: cover; float: center;">
+    </div>
+</div>
+<div>
+    <p style="text-align: justify; padding-left: 10%; padding-right: 10%; padding-top: 1%; padding-bottom: 1%;">I decided to create an assignment tracker because it is something that I would use on a daily basis as a college student. I really enjoy the Apple Watch activity rings so I decided to use that as my base design for tracking progress. The rings use closure, symmetry, common fate, continuity, proximity, and similarity to portray progress. For the functionality, when the user opens the app, they will directly see how far along they are for the assignments they have that week. Then, they can update their progress by swiping up on the assignments tab. I differentiated each iteration by color, using a black and white color scheme with monochromatic colors for the first iteration, a neon theme with a "dark mode" esque idea, and a regular white theme for the last iteration. The colors in the rings are triadic colors on the color wheel. I added a fourth iteration that is completely different from the rest as I thought the rings could get boring. The idea is to gamify completing assignments by raising a pet dragon. After completing assignments on time or early, you can gain points to upgrade and grow your dragon. You can see your progress on the right-hand side of the screen until your next update.</p>
+</div>
+
+
+<!-- <div class="w3-light-grey">
+    <div class="w3-col m6">
+        <h3>Assignment Tracker Design</h3>
+    </div>
+</div> -->
+
+
+<!-- Modal for full size images on click
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+  -->
+<script>
+// Modal Image Gallery
+// function onClick(element) {
+//   document.getElementById("img01").src = element.src;
+//   document.getElementById("modal01").style.display = "block";
+//   var captionText = document.getElementById("caption");
+//   captionText.innerHTML = element.alt;
+// }
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+
